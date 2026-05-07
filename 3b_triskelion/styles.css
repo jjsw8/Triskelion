@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+    text-align: center;
+  }
+  
+  .container {
+    padding: 40px;
+  }
+  
+  h1 {
+    color: #ff7a00;
+    letter-spacing: 2px;
+  }
+  
+  .symbol {
+    font-size: 60px;
+    margin: 20px 0;
+    animation: spin 6s linear infinite;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  button {
+    background: #ff7a00;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #ff9d3d;
+    transform: scale(1.05);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .result {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .motto {
+    margin-top: 10px;
+    font-style: italic;
+    color: #aaa;
+  }
+  
+  /* 📱 Responsivo */
+  @media (max-width: 600px) {
+    .symbol {
+      font-size: 40px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
